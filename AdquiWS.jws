@@ -11,6 +11,7 @@ import java.util.Map;
 import javax.swing.JTable;
 // prueba Javi commit
 // Respuesta Henrry
+//esto sale henry es una prueba haciendo en el adqui
 public class AdquiWS{
 
   private Map[] ret;
