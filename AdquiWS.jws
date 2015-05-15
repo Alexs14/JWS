@@ -540,7 +540,7 @@ public class AdquiWS{
     
     public Map[] getDetProveedores(String cod) throws Exception
     {
-        String sql="Select t.PARTIDA as partida, t.CANTIDAD_PEDIDO, t1.DETALLE, t.DETALLE, t.GESTION"+
+        String sql="Select t.PARTIDA as partida, t.CANTIDAD_PEDIDO as cantidad, t1.DETALLE as unidad, t.DETALLE as detalle, t.GESTION as gestion"+
                     " from TRANSACCION_DETALLE t INNER JOIN PROPONENTES p on p.COD_TRANSACCION=t.COD_TRANSACCION and p.COD_PROVEEDOR='"+cod+"'"+
                     " LEFT OUTER JOIN UNIDAD_MEDIDA t1 on t.COD_UNIDAD_MEDIDA=t1.COD_UNIDAD_MEDIDA";
         return Consulta(sql);
